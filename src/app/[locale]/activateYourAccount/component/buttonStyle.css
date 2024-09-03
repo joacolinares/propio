@@ -1,0 +1,13 @@
+.buttonPrimary {
+  background: linear-gradient(180deg, #AD98FF 0%, #612DFE 100%) !important; 
+  padding: 0.875em .5em !important;
+  color: white !important;
+  font-size: 1em !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  width: 100% !important;
+}
+
+.buttonPrimary:hover {
+  background: #7a2ff4;
+}

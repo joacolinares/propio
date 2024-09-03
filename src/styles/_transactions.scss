@@ -1,0 +1,40 @@
+.component-transactions {
+    padding: 1em;
+    border-radius: 16px;
+    background-color: #ffffff14; 
+    color: white;
+
+    .container-map{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+        padding: 1em 1em 1em 1em;
+        p{
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        span{
+            font-size: 0.75em;
+            font-weight: 400;
+        }
+        .container-type{
+            p {}
+            span{}
+        }
+
+        .container-amount{
+            p{}
+            span{}
+        }
+    }
+
+    .container-map:last-child{
+        border-bottom: none;
+        padding: 1em 1em 0em 1em;
+    }
+    .container-map:first-child{
+        padding: 0em 1em 1em 1em;
+    }
+}

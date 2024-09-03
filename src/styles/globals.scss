@@ -1,0 +1,161 @@
+.buttonPrimary {
+  background: linear-gradient(180deg, #AD98FF 0%, #612DFE 100%);
+  padding: 0.875em .5em;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.buttonPrimary:hover {
+  background: #7a2ff4;
+}
+
+.buttonSecondary {
+  background: white;
+  padding: 0.875em .5em;
+  color: #7a2ff4;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 100%;
+  border: solid 1px #AD98FF;
+}
+
+.buttonSecondary:hover {
+  background: #7a2ff4;
+  color: white;
+}
+
+.buttonDisabled {
+  background-color: gray;
+  cursor: no-drop;
+  padding: 0.875em .5em;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.textErrorInput {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.5em
+}
+
+.gradientPurpleLight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 87%)
+}
+
+.bgGradientPurpleMedium{
+  background: linear-gradient(180deg, #AD98FF 0%, #612DFE 100%);
+}
+
+.bgGradientPurpleDark{
+  background: linear-gradient(180deg, #0E0E33 0%, #39307B 100%);
+}
+
+.container-infoWallets {
+  padding: 1em;
+  margin: 0 1.5em;
+  border-radius: 10px;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 87%);
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.665em;
+  }
+
+  p {
+    font-size: 0.875em;
+    line-height: 1.5em;
+  }
+
+  .container-wallets {
+    margin-top: 2em;
+
+    .container-global {
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      margin-bottom: 1em;
+
+      img {
+        margin-right: 1em;
+      }
+
+      span {
+        font-size: 0.875em;
+        font-weight: bold
+      }
+    }
+  }
+
+  .selectedButtonBase {
+    @apply 
+    text-black 
+    dark:text-gray-300
+    bg-gray-100 
+    dark:bg-gray-700
+    border-gray-300
+    dark:border-gray-600
+    rounded-md 
+    border-none
+    text-center
+    font-bold
+    flex 
+    items-center 
+    justify-center 
+    cursor-pointer
+    border-2 
+  }
+  
+  .widthAndHeight1 {
+    @apply     
+    min-w-[150px]
+    lg:w-[110px] xl:w-[130px] 3xl:w-[170px] 4xl:w-[190px]
+    w-auto
+    h-[40px]
+  }
+}
+
+.titleWelcomeLinear {
+  background: linear-gradient(90deg, #ad98ff 14.44%, #612dff 80.68%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  width: 80%;
+
+  span {
+    color: white;
+    -webkit-text-fill-color: white;
+  }
+}
+
+.container-up-img {
+  background-image: url("../assets/imgs/BackgroundConnectYourWallet.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  height: 167px;
+  padding: 1.5em;
+}
+
+.container-down-img {
+  background-image: url("../assets/imgs/BackgroundConnectBottom.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  height: 167px;
+}

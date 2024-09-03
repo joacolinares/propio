@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import "reset";
+@import "globals";
+@import "welcome";
+@import "headerRegister";
+@import "register";
+@import "knowOurTerms";
+@import "connectYourWallet";
+@import "selectMembership";
+@import "navbar";
+@import "header";
+@import "dataStakesClaims";
+@import "transactions";
+@import "footer";
+@import "menuPage";
+@import "editProfile";
+@import "profile";
+@import "rewardHeader"

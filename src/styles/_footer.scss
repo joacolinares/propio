@@ -1,0 +1,37 @@
+.footer {
+  border-top: 2px solid #f2f3f8;
+  background: #fff;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  .link {
+    .container-icon {
+    }
+  }
+
+  .linkAdd {
+    border-radius: 40px;
+    border: 2px solid var(--Light-Secondary, #a9aeb4);
+    padding: .5em;
+  }
+
+  .imgProfile {
+    width: 1.75em;
+    height: 1.7em;
+
+    img{
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .--linkAdd {
+    border: 2px solid var(--Light-Secondary, #7A2FF4);
+  }
+}

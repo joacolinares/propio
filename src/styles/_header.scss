@@ -1,0 +1,21 @@
+.header {
+    border-radius: 0px 0px 40px 40px;
+    background: linear-gradient(180deg, #0E0E33 0%, #39307B 100%);
+    padding: 1.5em 1.5em 2em 1.5em;
+    width: 100%;
+}
+
+.headerPage {
+    // background: linear-gradient(180deg, #0E0E33 0%, #39307B 100%);
+    padding: 1.5em 1.5em 2em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .container-language-notifications{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 8em;
+    }
+}

@@ -1,0 +1,13 @@
+.reward-header {
+  border-radius: 16px;
+  border: 1px solid var(--Light-Purple-Gradient, #ad98ff);
+
+  background: var(
+    --White-Gradient,
+    linear-gradient(
+      180deg,
+      #ffffff1a 0%,
+      #ffffff00 87%
+    )
+  );
+}

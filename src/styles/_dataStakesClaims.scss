@@ -1,0 +1,102 @@
+.container-dataStakesClaims {
+  border-radius: 1em;
+  border: 1.2px solid #7a2ff4;
+  padding: 0.5em;
+  color: white;
+  text-align: center;
+
+  .container-aviable {
+    padding-top: 24px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #AD98FF 0%, #612DFE 100%);
+    margin-right: 0.5em;
+    height: 6.5em;
+    p {
+      font-size: .875em;
+      font-weight: bold;
+   
+    }
+    span {
+      font-size: 0.75em; 
+      margin-bottom: 1em;
+    }
+  }
+
+  .container-claims {
+    border-radius: 10px;
+    background: #7a2ff4;
+    padding-top: 24px;
+    height: 6.5em;
+
+    p {
+      font-size: .875em;
+      font-weight: bold;
+    }
+    span {
+      font-size: 0.75em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .container-active-stakes {
+    padding: 24px 0px;
+    border-radius: 10px;
+    background: #f2f3f8;
+    color: #7a2ff4;
+    width: 50%;
+    margin-right: .5em;
+    height: 6.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: .875em;
+      font-weight: bold;
+    }
+    span {
+      font-size: 0.75em;
+      margin-bottom: 1em;
+
+    }
+  }
+
+  .container-stakes-unStakes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    .container-stakes {
+      border-radius: 10px;
+      background: #f2f3f8;
+      color: #7a2ff4;
+      padding: 8px 0px;
+      width: 100%;
+      margin-bottom: .5em;
+      p {
+        font-size: .875em;
+        font-weight: bold;
+
+      }
+      span {
+        font-size: 0.75em;
+      }
+    }
+    .container-Unstakes {
+      border-radius: 10px;
+      background: #f2f3f8;
+      color: #7a2ff4;
+      padding: 8px 0px;
+      width: 100%;
+      p {
+        font-size: .875em;
+        font-weight: bold;
+      }
+      span {
+        font-size: 0.75em;
+      }
+    }
+  }
+}

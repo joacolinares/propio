@@ -1,0 +1,71 @@
+.container-input-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+    label {
+        font-size: .875em;
+        font-weight: bold;
+        color: #1E0E39;
+        margin-bottom: .2em;
+    }
+    input {
+        background: #F2F3F8;
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    select {
+      background: #F2F3F8;
+      border-radius: 10px;
+      padding: 16px;
+  }
+}  
+
+.registerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 24px 40px 24px;
+    height: calc(100vh - 285px);
+  .container-input-label {
+    label {
+    }
+    input {
+    }
+  }
+}
+
+.registerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 24px 102px 24px;
+    height: calc(100vh - 225px);
+  .container-input-label {
+    label {
+    }
+    input {
+    }
+  }
+}
+
+.registerThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 24px 102px 24px;
+    height: calc(100vh - 225px);
+  .container-input-label {
+    label {
+    }
+    input {
+    }
+
+    select {
+        background: #F2F3F8;
+        border-radius: 10px;
+        padding: 16px;
+    }
+  }
+}

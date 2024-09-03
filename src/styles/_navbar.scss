@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .container-log{
+
+    }
+
+    .container-language-notifications{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 8em;
+    }
+}

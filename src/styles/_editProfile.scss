@@ -1,0 +1,78 @@
+.edit-profile {
+  padding: 24px 24px 96px 24px;
+  // background: linear-gradient(180deg, #0e0e33 0%, #39307b 100%);
+  color: white;
+
+  .title-edit {
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+
+  .container-bio {
+    padding: 1em;
+    border-radius: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 87%
+    );
+    margin: 1.5em 0;
+    label {
+      font-size: 0.875em;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5em;
+      color: white;
+    }
+    textarea {
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      width: 100%;
+      height: 6.25em;
+      font-size: 0.875em;
+      color: #a9aeb4;
+    }
+  }
+
+  .container-form {
+    // margin: 1.5em auto;
+    // margin-top: 1.5em;
+    padding: 1em 1em 0em 1em;
+    border-radius: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 87%
+    );
+    .container-input-label {
+      label {
+        font-size: 0.875em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        color: white;
+      }
+      input {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1em;
+      }
+
+      #username[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+        border-radius: 50%;
+        padding: 4px;
+      }
+
+      select {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1em;
+
+        option {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+}

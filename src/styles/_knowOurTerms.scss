@@ -1,0 +1,68 @@
+.container-knowOurTerms {
+    .header {
+    background: linear-gradient(180deg, #0e0e33 0%, #39307b 100%);
+    width: 100%;
+    height: 225px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding: 24px 24px 32px 24px;
+    .header-logo {
+      margin-bottom: 2em;
+      img {
+      }
+    }
+    .header-title {
+      h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 0.875em;
+        line-height: 1.5em;
+        width: 90%;
+      }
+      span {
+        color: #3d93da;
+      }
+    }
+  }
+
+  .container-list-conditions{
+    padding: 2em 1.5em;
+
+      ol {
+    background-color: #f2f3f8;
+    border-radius: 10px;
+    border: 1px solid #f2f3f8;
+    padding: 1em;
+    color: #1e0e39;
+
+    li {
+        text-align: justify;
+        font-size: .875em;
+        line-height: 1.2em;
+        margin-bottom: 1.5em;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+  }
+  }
+
+  .container-btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+
+    .container-btnClose{
+        width: 35%;
+    }
+    .container-btnAgree{
+        width: 60%;
+
+    }
+  }
+}

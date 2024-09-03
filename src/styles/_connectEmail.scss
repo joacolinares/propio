@@ -1,0 +1,94 @@
+.layout-connect {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #0e0e33 0%, #39307b 100%);
+  color: white;
+
+  .container-up {
+    background-image: url("../assets/imgs/BackgroundConnectYourWallet.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    object-fit: cover;
+    height: 167px;
+    padding: 1.5em;
+  }
+
+  .container-down {
+    background-image: url("../assets/imgs/BackgroundConnectBottom.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    object-fit: cover;
+    height: 167px;
+  }
+
+  .page-SingMessage{
+    padding: 1em;
+    margin: 0 1.5em;
+    border-radius: 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 87%
+    );
+    .title-message{
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.665em;
+    }
+    .text-message{
+      font-size: 0.875em;
+      line-height: 1.5em;
+    }
+
+    .container-remember{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      margin: 2em 0;
+      .text-remember{
+        font-size: .875em;
+        font-weight: 400;
+       
+      }
+      .container-circle{
+        background-color: #A9AEB4;
+        border-radius: 20px;
+        width: 2.1em;
+        height: 1.2em;
+        display: flex;
+        justify-content: flex-start;
+
+        .circle{
+          background-color: #F2F3F8;
+          border-radius: 50%;
+          width: 1.1em;
+          height: 1.1em;
+        }
+      }
+
+      .--active{
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .container-signing{
+      padding: 1em;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.10);
+      margin-bottom: 2em;
+      .text-signing{
+        font-size: .875em;
+        font-weight: 400;
+        line-height: 1.4em;
+      }
+    }
+  }
+}

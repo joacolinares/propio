@@ -1,0 +1,982 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_percentage",
+				"type": "uint256"
+			}
+		],
+		"name": "addPartnerShipSplit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_membershipId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nftUse",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_sponsor",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			}
+		],
+		"name": "buyMembership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_membershipTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_membershipAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_maxMemberships",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_timelimitMembership",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expirationMembership",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_minInv",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_maxInv",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_fee",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountFee",
+				"type": "uint256"
+			}
+		],
+		"name": "createMembership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_nftUse",
+				"type": "uint256"
+			}
+		],
+		"name": "getRank2",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_usdtAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_poiAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_accountContract",
+				"type": "address"
+			}
+		],
+		"name": "initialize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "OwnableInvalidOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "OwnableUnauthorizedAccount",
+		"type": "error"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_newLevels",
+				"type": "uint256"
+			}
+		],
+		"name": "setLeadershipSplitLevels",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "arrayDirectos",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "bestMember",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "bonuses",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "cantDirect",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "cantDirectMoney",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_userId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "getInfoOfMembership",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "memberId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expire",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct MembershipContract3.InfoOfMembershipsBuy",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "getMembership",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "membershipTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "membershipAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "actualMemberships",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxMemberships",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "actualDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timelimitMembership",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationMembership",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minInv",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxInv",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "fee",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountFee",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct MembershipContract3.Membership",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "userId",
+				"type": "uint256"
+			}
+		],
+		"name": "getMembershipOfUsersLength",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_nftUse",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_level",
+				"type": "uint256"
+			}
+		],
+		"name": "getWalletsInLevel",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountInvested",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "recived",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct MembershipContract3.SponsorDetails[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "hasExecuted",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "haveMembership",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "leadershipSplitLevels",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "leadershipSplitPartners",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "membersBonus",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "membershipOfUsers",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "memberId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "time",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "expire",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "memberships",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "membershipTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "membershipAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "actualMemberships",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxMemberships",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "actualDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timelimitMembership",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "expirationMembership",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minInv",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxInv",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "fee",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountFee",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "MembersMoney",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "minDirects",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "myMembersTeam",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "partnerShipSplit",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "percentage",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "percentages",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "personalActiceMembership",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "poiContract",
+		"outputs": [
+			{
+				"internalType": "contract POI2",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "rankNum",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "refferalMoney",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "sponsorLevels",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountInvested",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "recived",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "thresholds",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalPercentage",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "totalVolume",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "treeAmount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

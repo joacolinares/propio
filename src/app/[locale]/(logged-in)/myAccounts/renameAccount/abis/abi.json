@@ -1,0 +1,401 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "OwnableInvalidOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "OwnableUnauthorizedAccount",
+		"type": "error"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "amount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_sponsor",
+				"type": "uint256"
+			}
+		],
+		"name": "findRegisteredSponsor",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_accountContract",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_memberContract",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_usdtAddress",
+				"type": "address"
+			}
+		],
+		"name": "initialize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "personalDataMap",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "encryptedEmail",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedUsername",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedPhoneNumber",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedCountry",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedGender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encryptedDateOfBirth",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "porcentaje",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_accountContract",
+				"type": "address"
+			}
+		],
+		"name": "setAccountContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_percentage",
+				"type": "uint256"
+			}
+		],
+		"name": "setAdminWallets",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "setAmount",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_memberContract",
+				"type": "address"
+			}
+		],
+		"name": "setMemberContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_encryptedEmail",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedUsername",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedPhoneNumber",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedCountry",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedGender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedDateOfBirth",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_sponsor",
+				"type": "uint256"
+			}
+		],
+		"name": "storeInfo",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tokenIds",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_encryptedEmail",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedUsername",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedPhoneNumber",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedCountry",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedGender",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encryptedDateOfBirth",
+				"type": "string"
+			}
+		],
+		"name": "updateInfo",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "userRegister",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "walletAdmins",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "percentage",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

@@ -1,0 +1,49 @@
+.menu-page {
+  padding: 24px 24px 96px 24px;
+  // background: linear-gradient(180deg, #0e0e33 0%, #39307b 100%);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+
+  .menu-page-item {
+    border-radius: 16px;
+    border: 1px solid #7a2ff4;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 87%
+    );
+    padding: .5em 1em;
+    height: 7.5em;
+    width: 9.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 1.5em;
+    .container-img {
+      border-radius: 40px;
+      background: linear-gradient(180deg, #ad98ff 0%, #612dfe 100%);
+      width: 3.5em;
+      padding: 1em;
+      margin: auto;
+      img {
+      }
+    }
+
+    span {
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .-center-Container {
+    grid-area: span 2;
+    grid-row: 5 / 5;
+    column-span: 2;
+  }
+}
